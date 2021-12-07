@@ -22,3 +22,6 @@ export function getGameStatusElement() {
 export function getReplayButtonElement() {
   return document.querySelector("#replayGame");
 }
+export function getElementListCell() {
+  return document.querySelector("#cellList");
+}
