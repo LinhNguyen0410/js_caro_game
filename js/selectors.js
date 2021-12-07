@@ -14,8 +14,11 @@ export function getCurrentTurnElement() {
 }
 export function getCellElementAtIdx(index) {
   // do index trong arr bắt đầu từ 0 mà thăng nth-child trong css bắt đầu từ 1 nên mình mới +1
-  return document.querySelectorAll(`#cellList > li:nth-child( ${index + 1} )`);
+  return document.querySelector(`#cellList > li:nth-child( ${index + 1} )`);
 }
 export function getGameStatusElement() {
   return document.querySelector("#gameStatus");
+}
+export function getReplayButtonElement() {
+  return document.querySelector("#replayGame");
 }
